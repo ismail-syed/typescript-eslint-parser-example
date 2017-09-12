@@ -1,0 +1,29 @@
+{
+  "name": "typescript-eslint-parser-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ismail-syed/typescript-eslint-parser-example.git",
+  "author": "Ismail Syed <ismail.syed@shopify.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .ts --max-warnings 0"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-plugin-shopify": "^17.0.0",
+    "eslint-plugin-typescript": "^0.7.0",
+    "typescript": "^2.5.2",
+    "typescript-eslint-parser": "^8.0.0"
+  },
+  "extends": "plugin:shopify/esnext",
+  "eslintConfig": {
+    "parser": "typescript-eslint-parser",
+    "extends": [
+      "plugin:shopify/esnext",
+      "plugin:shopify/node"
+    ],
+    "plugins": [
+      "typescript"
+    ]
+  }
+}
